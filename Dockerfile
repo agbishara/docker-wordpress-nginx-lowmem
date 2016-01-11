@@ -61,7 +61,7 @@ EXPOSE 3306
 EXPOSE 80
 EXPOSE 443
 
-# volume for configuration and logs
-VOLUME ["/var/lib/mysql", "/usr/share/nginx/www", "/var/log/", "/etc/nginx/"]
+# volume for configuration and logs External Vol Setup
+#VOLUME ["/var/lib/mysql", "/usr/share/nginx/www", "/var/log/", "/etc/nginx/"]
 
 CMD ["/bin/bash", "/start.sh"]
